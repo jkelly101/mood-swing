@@ -14,6 +14,76 @@
     font-size:1.8rem;
   }
 
+  .form-hero
+  {
+    background-image: linear-gradient(#4CA1AF, #C4E0E5); 
+  }
+
+  .form-hero label
+  {
+    font-family: 'Lobster', cursive;
+    font-size:1.6rem;
+  }
+
+  .form-hero .input-group
+  {
+    margin-bottom:14px;
+    
+  }
+  .form-hero .form-control, .form-hero .input-group-text
+  {
+    line-height:40px;
+    padding:8px;
+    font-size:1.2rem;
+  }
+
+  .form-hero .input-group-text
+  {
+    padding-right:18px;
+    padding-left:18px;
+    color:#04404B;
+  }
+
+  .seperator {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .seperator:before,
+  .seperator:after {
+      content: '';
+      border-top: 1px solid #04404B;
+      margin: 0 20px 0 0;
+      flex: 1 0 20px;
+  }
+
+  .seperator:after {
+      margin: 0 0 0 20px;
+  }
+
+  
+  .form-hero .btn
+  {
+    width:100%;
+    padding:12px;
+  }
+  
+  
+  .app-title
+  {
+    color:#04404B;
+    padding:1vw;
+    font-family: 'Lobster', cursive;
+    font-size:3rem;
+  }
+
+  .center-content
+  {
+    text-align:center;
+  }
 
   body
   {
