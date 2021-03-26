@@ -1,4 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@400;600&display=swap');
+
+@media all and (min-width: 1024px){
+  .navbar
+  {
+    background-color:#4CA1AF;
+  }
+
+  .navbar-brand
+  {
+    color: black;
+    padding:1vw;
+    font-family: 'Lobster', cursive;
+    font-size:1.8rem;
+  }
+
+
+  body
+  {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #C4E0E5;
+  }
+
+  .hero-div
+  {
+    background-image: linear-gradient(#4CA1AF, #C4E0E5); 
+    min-height:60vw;
+    text-align:center;
+  }
+
+  .page-title
+  {
+    font-family: 'Lobster', cursive;
+    color:#04404B;
+    text-align:center;
+    padding: 8vw 2vw  2vw   2vw ;
+    font-size: 4vw;
+
+  }
+
+  .moods
+  {
+    text-align:center;
+    font-size: 3vw;
+    padding:1vw;
+    background-color:#C4E0E5;
+    display: inline;
+    border-radius:10px;
+  }
+
+  .moods i
+  {
+    padding:1vw;
+  }
+
+
+  .helper-text
+  {
+    padding:1vw;
+    display: block;
+    font-weight:600;
+  }
+ 
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) { }
+
+@media all and (min-width: 480px) and (max-width: 768px) { }
+
+@media all and (max-width: 480px) { }
+
+
+/* Portrait */
+@media screen and (orientation:portrait) { /* Portrait styles here */ }
+/* Landscape */
+@media screen and (orientation:landscape) { /* Landscape styles here */ }
+
+
+/* CSS for iPhone, iPad, and Retina Displays */
+/* Non-Retina */
+@media screen and (-webkit-max-device-pixel-ratio: 1) {
+}
+
+/* Retina */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5) {
+}
+
+/* iPhone Portrait */
+@media screen and (max-device-width: 480px) and (orientation:portrait) {
+  
+  .page-title
+  {
+    font-family: 'Lobster', cursive;
+    color:#04404B;
+    text-align:center;
+    padding: 8vw 2vw  2vw   2vw ;
+    font-size: 8vw;
+
+  }
+} 
+
+/* iPhone Landscape */
+@media screen and (max-device-width: 480px) and (orientation:landscape) {
+}
+
+/* iPad Portrait */
+@media screen and (min-device-width: 481px) and (orientation:portrait) {
+}
+
+/* iPad Landscape */
+@media screen and (min-device-width: 481px) and (orientation:landscape) {
+}
+
 form.signup,
 form.login {
   margin-top: 50px;
 }
+
+
+
