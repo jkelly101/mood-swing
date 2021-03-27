@@ -1,30 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@400;600&display=swap');
 
 @media all and (min-width: 1024px){
-  .navbar
-  {
-    background-color:#4CA1AF;
-  }
+  
+  /* Navbar Styles */
 
-  .navbar-brand
+  .navbar-brand, .navbar-text
   {
-    color: black;
     padding:1vw;
-    font-family: 'Lobster', cursive;
     font-size:1.8rem;
   }
 
-  .form-hero
+  .navbar-text
   {
-    background-image: linear-gradient(#4CA1AF, #C4E0E5); 
-  }
-
-  .form-hero label
-  {
-    font-family: 'Lobster', cursive;
+    margin-right:2%;
     font-size:1.6rem;
   }
 
+  /* Form Styles */
   .form-hero .input-group
   {
     margin-bottom:14px;
@@ -35,36 +27,16 @@
     line-height:40px;
     padding:8px;
     font-size:1.2rem;
+
   }
 
   .form-hero .input-group-text
   {
     padding-right:18px;
     padding-left:18px;
-    color:#04404B;
   }
 
-  .seperator {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-
-  .seperator:before,
-  .seperator:after {
-      content: '';
-      border-top: 1px solid #04404B;
-      margin: 0 20px 0 0;
-      flex: 1 0 20px;
-  }
-
-  .seperator:after {
-      margin: 0 0 0 20px;
-  }
-
-  
+  /* User Page */
   .form-hero .btn
   {
     width:100%;
@@ -74,35 +46,17 @@
   
   .app-title
   {
-    color:#04404B;
     padding:1vw;
-    font-family: 'Lobster', cursive;
     font-size:3rem;
-  }
-
-  .center-content
-  {
-    text-align:center;
-  }
-
-  body
-  {
-    font-family: 'Montserrat', sans-serif;
-    background-color: #C4E0E5;
   }
 
   .hero-div
   {
-    background-image: linear-gradient(#4CA1AF, #C4E0E5); 
     min-height:60vw;
-    text-align:center;
   }
 
   .page-title
   {
-    font-family: 'Lobster', cursive;
-    color:#04404B;
-    text-align:center;
     padding: 8vw 2vw  2vw   2vw ;
     font-size: 4vw;
 
@@ -110,12 +64,8 @@
 
   .moods
   {
-    text-align:center;
     font-size: 3vw;
     padding:1vw;
-    background-color:#C4E0E5;
-    display: inline;
-    border-radius:10px;
   }
 
   .moods i
@@ -123,11 +73,9 @@
     padding:1vw;
   }
 
-
   .helper-text
   {
     padding:1vw;
-    display: block;
     font-weight:600;
   }
  
@@ -188,6 +136,108 @@ form.signup,
 form.login {
   margin-top: 50px;
 }
+
+
+  /* Navbar Styles */
+  .navbar
+  {
+    background-color:#4CA1AF;
+  }
+
+  .navbar-brand, .navbar-text
+  {
+    color: black;
+    font-family: 'Lobster', cursive;
+  }
+
+  /* Form Styles */
+  .form-hero
+  {
+    background-image: linear-gradient(#4CA1AF, #C4E0E5); 
+  }
+
+  .form-hero .input-group-text
+  {
+    background-color:#04404B;
+    color:#fff;
+    border-color:#04404B;
+  }
+
+  .seperator {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .seperator:before,
+  .seperator:after {
+      content: '';
+      border-top: 1px solid #04404B;
+      margin: 0 20px 0 0;
+      flex: 1 0 20px;
+  }
+
+  .seperator:after {
+      margin: 0 0 0 20px;
+  }
+
+  /* User Page */
+  .app-title
+  {
+    color:#04404B;
+    font-family: 'Lobster', cursive;
+  }
+
+  .center-content
+  {
+    text-align:center;
+  }
+
+  body
+  {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #C4E0E5;
+  }
+
+  .hero-div
+  {
+    background-image: linear-gradient(#4CA1AF, #C4E0E5); 
+    text-align:center;
+  }
+
+  .page-title
+  {
+    font-family: 'Lobster', cursive;
+    color:#04404B;
+    text-align:center;
+
+  }
+
+  .moods
+  {
+    text-align:center;
+    background-color:#C4E0E5;
+    display: inline;
+    border-radius:10px;
+  }
+
+  .moods i {
+    transition: transform .7s ease-in-out;
+  }
+  .moods i:hover {
+    transform: rotate(360deg);
+    cursor:pointer;
+    color:#04404B;
+  }
+
+
+  .helper-text
+  {
+    display: block;
+  }
+
 
 
 
