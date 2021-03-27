@@ -40,4 +40,9 @@ module.exports = function(app) {
     res.render("user");
   });
 
+  app.get("/mood", isAuthenticated, function(req, res) {
+    //res.sendFile(path.join(__dirname, "../public/members.html"));
+    res.render("mood");
+  });
+
 };
