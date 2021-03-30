@@ -212,14 +212,13 @@ body {
   display: block;
 }
 
-#daily-quote {
-  padding: 10px;
+blockquote {
   font-weight: 600;
   color: #04404b;
   font-size: 20px;
   font-family: Courgette;
 }
 
-footer {
+blockquote footer {
   text-align: right;
 }
