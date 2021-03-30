@@ -4,6 +4,10 @@ var exphbs = require("express-handlebars");
 var express = require("express");
 var session = require("express-session");
 
+// Testing Out API Packages
+var cors = require('cors');
+var axios = require('axios');
+
 // Requiring passport as we've configured it
 var passport = require("./config/passport");
 
@@ -13,6 +17,8 @@ var db = require("./models");
 
 // Creating express app and configuring middleware needed for authentication
 var app = express();
+
+app.use(cors())
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static("public"));
