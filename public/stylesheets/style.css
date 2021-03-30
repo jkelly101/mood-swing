@@ -212,7 +212,6 @@ form.login {
     font-family: 'Lobster', cursive;
     color:#04404B;
     text-align:center;
-
   }
 
   .moods
@@ -265,6 +264,10 @@ form.login {
     align-items: center;
   }
 
+  .spinner-border
+  {
+    display:none;
+  }
 
 
 
