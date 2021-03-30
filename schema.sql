@@ -10,3 +10,6 @@ CREATE TABLE quotes(
   PRIMARY KEY (id)
 );
 
+INSERT INTO quotes_db (mood, quote)
+VALUES ("happy", `“Thousands of candles can be lighted from a single candle, and the life of the candle will not be shortened. Happiness never decreases by being shared.” – Buddha`)
+
