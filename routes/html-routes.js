@@ -41,12 +41,12 @@ module.exports = function(app) {
     res.render("user");
   });
 
-  app.get("/mood", isAuthenticated, function(req, res) {
+  app.get("/happy", isAuthenticated, function(req, res) {
     if (!req.user) {
       // The user is not logged in, send back an empty object
       res.json({});
     } else {
-      res.render("mood");   
+      res.render("happy");   
     }
     
 

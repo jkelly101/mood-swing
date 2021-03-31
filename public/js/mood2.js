@@ -3,9 +3,9 @@ $(".mood-click").on("click", (event) => {
   //
   event.preventDefault();
   let mood = $(event.target).attr("id");
-  window.location.replace(`/mood2/${mood}`);
+  window.location.replace(`/${mood}`);
 
-  
+
 
 });
 

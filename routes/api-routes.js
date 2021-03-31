@@ -66,7 +66,7 @@ module.exports = function (app) {
     sendGetReq(res);
   });
 
-  app.get("/api/mood", function(req, res) {
+  app.get("/api/happy", function(req, res) {
    
       //&key=AIzaSyDBrH_3o-Id-pJFZnDqva4mytUP5e6IsHs
       axios.get('https://www.googleapis.com/books/v1/volumes?q=motivation')

@@ -46,7 +46,7 @@ $(document).ready(function () {
         });
     }) 
 
-    $.get("/api/mood").then(function (data) {
+    $.get("/api/happy").then(function (data) {
         bookCount = data.books.items.length
         console.log(data.books)
         
