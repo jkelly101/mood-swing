@@ -1,7 +1,9 @@
 // Requiring our models and passport as we've configured it
 var db = require("../models");
 var passport = require("../config/passport");
-var axios = require("axios");
+
+var axios = require('axios');
+
 
 module.exports = function (app) {
   // Using the passport.authenticate middleware with our local strategy.
@@ -61,4 +63,26 @@ module.exports = function (app) {
   app.get("/api/dailyQuote", function (req, res) {
     sendGetReq(res);
   });
+
+  app.get("/api/mood", function(req, res) {
+   
+      //&key=AIzaSyDBrH_3o-Id-pJFZnDqva4mytUP5e6IsHs
+      axios.get('https://www.googleapis.com/books/v1/volumes?q=motivation')
+      
+      .then(response => {
+        res.json({
+          books: response.data
+        });
+      })
+      .catch(error => {
+        console.log(error);
+      });
+
+
+  });
+
+     
+
+
+
 };
