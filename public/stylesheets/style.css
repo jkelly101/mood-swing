@@ -226,6 +226,11 @@ body {
   min-height: 40px;
 }
 
+  .spinner-border
+  {
+    display:none;
+  }
+  
 .book-row .col {
   display: flex;
   justify-content: center;
