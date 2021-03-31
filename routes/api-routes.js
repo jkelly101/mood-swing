@@ -69,7 +69,7 @@ module.exports = function (app) {
   app.get("/api/happy", function(req, res) {
    
       //&key=AIzaSyDBrH_3o-Id-pJFZnDqva4mytUP5e6IsHs
-      axios.get('https://www.googleapis.com/books/v1/volumes?q=motivation')
+      axios.get('https://www.googleapis.com/books/v1/volumes?q=happy')
       
       .then(response => {
         res.json({
@@ -85,7 +85,7 @@ module.exports = function (app) {
   app.get("/api/angry", function(req, res) {
    
     //&key=AIzaSyDBrH_3o-Id-pJFZnDqva4mytUP5e6IsHs
-    axios.get('https://www.googleapis.com/books/v1/volumes?q=motivation')
+    axios.get('https://www.googleapis.com/books/v1/volumes?q=angry')
     
     .then(response => {
       res.json({
