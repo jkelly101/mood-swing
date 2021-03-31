@@ -59,5 +59,8 @@ $(document).ready(function () {
         }
 
     });
+    $.get("/api/movies/angry").then (function(data) {
+        console.log(data);
+    })
 
   });

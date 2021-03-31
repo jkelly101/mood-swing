@@ -98,5 +98,38 @@ module.exports = function (app) {
 
 });
 
+app.get("/api/movies/:mood", function(req, res) {
+   let currentMood = (req.params.mood)
+   let genre; 
+   switch (currentMood){
+     case "angry":
+       genre = "27";
+       break;
+     case "happy":
+        genre = "35";
+        break;
+     default: 
+       genre = "12"
+   }
+   //genre id's
+   //https://api.themoviedb.org/3/genre/movie/list?api_key=0617e1b9a854c456b3318ee55d178c39&language=en-US
+  axios.get(`https://api.themoviedb.org/3/discover/movie?api_key=0617e1b9a854c456b3318ee55d178c39&language=en-US&with_genres=${genre}`)
+  
+  // in the consoloe try to log array only 
+  // try to loop through array up to 5 movies and consoloe those five 
+  // find the initial path for the movie url (poster path) --> google moviedb poster path
+  // create a div on handlebars to hold movies to append 
+  // loop through and append movie title and poster (have to create element to hold like img h3 )
+  .then(response => {
+    res.json({
+      movies: response.data
+    });
+  })
+  .catch(error => {
+    console.log(error);
+  });
+
+});
+
      
 };
