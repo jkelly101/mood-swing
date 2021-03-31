@@ -1,98 +1,88 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Kalam&display=swap");
 
-@media all and (min-width: 1024px){
-  
+@media all and (min-width: 1024px) {
   /* Navbar Styles */
 
-  .navbar-brand, .navbar-text
-  {
-    padding:1vw;
-    font-size:1.8rem;
+  .navbar-brand,
+  .navbar-text {
+    padding: 1vw;
+    font-size: 1.8rem;
   }
 
-  .navbar-text
-  {
-    margin-right:2%;
-    font-size:1.6rem;
+  .navbar-text {
+    margin-right: 2%;
+    font-size: 1.6rem;
   }
 
   /* Form Styles */
-  .form-hero .input-group
-  {
-    margin-bottom:14px;
-    
+  .form-hero .input-group {
+    margin-bottom: 14px;
   }
-  .form-hero .form-control, .form-hero .input-group-text
-  {
-    line-height:40px;
-    padding:8px;
-    font-size:1.2rem;
-
+  .form-hero .form-control,
+  .form-hero .input-group-text {
+    line-height: 40px;
+    padding: 8px;
+    font-size: 1.2rem;
   }
 
-  .form-hero .input-group-text
-  {
-    padding-right:18px;
-    padding-left:18px;
+  .form-hero .input-group-text {
+    padding-right: 18px;
+    padding-left: 18px;
   }
 
   /* User Page */
-  .form-hero .btn
-  {
-    width:100%;
-    padding:12px;
-  }
-  
-  
-  .app-title
-  {
-    padding:1vw;
-    font-size:3rem;
+  .form-hero .btn {
+    width: 100%;
+    padding: 12px;
   }
 
-  .hero-div
-  {
-    min-height:60vw;
+  .app-title {
+    padding: 1vw;
+    font-size: 3rem;
   }
 
-  .page-title
-  {
-    padding: 8vw 2vw  2vw   2vw ;
+  .hero-div {
+    min-height: 30vw;
+  }
+
+  .page-title {
+    padding: 8vw 2vw 2vw 2vw;
     font-size: 4vw;
-
   }
 
-  .moods
-  {
+  .moods {
     font-size: 3vw;
-    padding:1vw;
+    padding: 1vw;
   }
 
-  .moods i
-  {
-    padding:1vw;
+  .moods i {
+    padding: 1vw;
   }
 
-  .helper-text
-  {
-    padding:1vw;
-    font-weight:600;
+  .helper-text {
+    padding: 1vw;
+    font-weight: 600;
   }
- 
 }
 
-@media all and (min-width: 768px) and (max-width: 1024px) { }
+@media all and (min-width: 768px) and (max-width: 1024px) {
+}
 
-@media all and (min-width: 480px) and (max-width: 768px) { }
+@media all and (min-width: 480px) and (max-width: 768px) {
+}
 
-@media all and (max-width: 480px) { }
-
+@media all and (max-width: 480px) {
+}
 
 /* Portrait */
-@media screen and (orientation:portrait) { /* Portrait styles here */ }
+@media screen and (orientation: portrait) {
+  /* Portrait styles here */
+}
 /* Landscape */
-@media screen and (orientation:landscape) { /* Landscape styles here */ }
-
+@media screen and (orientation: landscape) {
+  /* Landscape styles here */
+}
 
 /* CSS for iPhone, iPad, and Retina Displays */
 /* Non-Retina */
@@ -101,35 +91,32 @@
 
 /* Retina */
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
-only screen and (-o-min-device-pixel-ratio: 3/2),
-only screen and (min--moz-device-pixel-ratio: 1.5),
-only screen and (min-device-pixel-ratio: 1.5) {
+  only screen and (-o-min-device-pixel-ratio: 3/2),
+  only screen and (min--moz-device-pixel-ratio: 1.5),
+  only screen and (min-device-pixel-ratio: 1.5) {
 }
 
 /* iPhone Portrait */
-@media screen and (max-device-width: 480px) and (orientation:portrait) {
-  
-  .page-title
-  {
-    font-family: 'Lobster', cursive;
-    color:#04404B;
-    text-align:center;
-    padding: 8vw 2vw  2vw   2vw ;
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+  .page-title {
+    font-family: "Lobster", cursive;
+    color: #04404b;
+    text-align: center;
+    padding: 8vw 2vw 2vw 2vw;
     font-size: 8vw;
-
   }
-} 
+}
 
 /* iPhone Landscape */
-@media screen and (max-device-width: 480px) and (orientation:landscape) {
+@media screen and (max-device-width: 480px) and (orientation: landscape) {
 }
 
 /* iPad Portrait */
-@media screen and (min-device-width: 481px) and (orientation:portrait) {
+@media screen and (min-device-width: 481px) and (orientation: portrait) {
 }
 
 /* iPad Landscape */
-@media screen and (min-device-width: 481px) and (orientation:landscape) {
+@media screen and (min-device-width: 481px) and (orientation: landscape) {
 }
 
 form.signup,
@@ -137,69 +124,43 @@ form.login {
   margin-top: 50px;
 }
 
+/* Navbar Styles */
+.navbar {
+  background-color: #4ca1af;
+}
 
-  /* Navbar Styles */
-  .navbar
-  {
-    background-color:#4CA1AF;
-  }
+.navbar-brand,
+.navbar-text {
+  color: black;
+  font-family: "Lobster", cursive;
+}
 
-  .navbar-brand, .navbar-text
-  {
-    color: black;
-    font-family: 'Lobster', cursive;
-  }
+/* Form Styles */
+.form-hero {
+  background-image: linear-gradient(#4ca1af, #c4e0e5);
+}
 
-  /* Form Styles */
-  .form-hero
-  {
-    background-image: linear-gradient(#4CA1AF, #C4E0E5); 
-  }
+.form-hero .input-group-text {
+  background-color: #04404b;
+  color: #fff;
+  border-color: #04404b;
+}
 
-  .form-hero .input-group-text
-  {
-    background-color:#04404B;
-    color:#fff;
-    border-color:#04404B;
-  }
+.seperator {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 
-  .seperator {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-
-  .seperator:before,
-  .seperator:after {
-      content: '';
-      border-top: 1px solid #04404B;
-      margin: 0 20px 0 0;
-      flex: 1 0 20px;
-  }
-
-  .seperator:after {
-      margin: 0 0 0 20px;
-  }
-
-  /* User Page */
-  .app-title
-  {
-    color:#04404B;
-    font-family: 'Lobster', cursive;
-  }
-
-  .center-content
-  {
-    text-align:center;
-  }
-
-  body
-  {
-    font-family: 'Montserrat', sans-serif;
-    background-color: #C4E0E5;
-  }
+.seperator:before,
+.seperator:after {
+  content: "";
+  border-top: 1px solid #04404b;
+  margin: 0 20px 0 0;
+  flex: 1 0 20px;
+}
 
   .hero-div
   {
@@ -214,28 +175,28 @@ form.login {
     text-align:center;
   }
 
-  .moods
-  {
-    text-align:center;
-    background-color:#C4E0E5;
-    display: inline;
-    border-radius:10px;
-  }
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #c4e0e5;
+}
 
-  .moods i {
-    transition: transform .7s ease-in-out;
-  }
-  .moods i:hover {
-    transform: rotate(360deg);
-    cursor:pointer;
-    color:#04404B;
-  }
+.hero-div {
+  background-image: linear-gradient(#4ca1af, #c4e0e5);
+  text-align: center;
+}
 
+.page-title {
+  font-family: "Lobster", cursive;
+  color: #04404b;
+  text-align: center;
+}
 
-  .helper-text
-  {
-    display: block;
-  }
+.moods {
+  text-align: center;
+  background-color: #c4e0e5;
+  display: inline;
+  border-radius: 10px;
+}
 
   .gif-row, .book-row
   {
@@ -270,4 +231,17 @@ form.login {
   }
 
 
+.helper-text {
+  display: block;
+}
 
+blockquote {
+  font-weight: 600;
+  color: #04404b;
+  font-size: 20px;
+  font-family: Courgette;
+}
+
+blockquote footer {
+  text-align: right;
+}
