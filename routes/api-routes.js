@@ -2,6 +2,8 @@
 var db = require("../models");
 var passport = require("../config/passport");
 
+var axios = require('axios');
+
 module.exports = function (app) {
   // Using the passport.authenticate middleware with our local strategy.
   // If the user has valid login credentials, send them to the members page.
@@ -13,6 +15,7 @@ module.exports = function (app) {
   // Route for signing up a user. The user's password is automatically hashed and stored securely thanks to
   // How we configured our Sequelize User Model. If the user is created successfully, proceed to log the user in,
   // Otherwise send back an error
+
   app.post("/api/signup", function (req, res) {
     db.User.create({
       email: req.body.email,
@@ -45,6 +48,43 @@ module.exports = function (app) {
         email: req.user.email,
         id: req.user.id,
       });
+
     }
   });
+
+  const sendGetReq = async (res) => {
+    try {
+      const resp = await axios.get("https://zenquotes.io/api/today");
+      res.json(resp.data);
+      console.log(resp);
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
+  app.get("/api/dailyQuote", function (req, res) {
+    sendGetReq(res);
+  });
+
+  app.get("/api/mood", function(req, res) {
+   
+      //&key=AIzaSyDBrH_3o-Id-pJFZnDqva4mytUP5e6IsHs
+      axios.get('https://www.googleapis.com/books/v1/volumes?q=motivation')
+      
+      .then(response => {
+        res.json({
+          books: response.data
+        });
+      })
+      .catch(error => {
+        console.log(error);
+      });
+
+
+  });
+
+     
+
+
+
 };
