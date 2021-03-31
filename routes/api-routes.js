@@ -4,7 +4,6 @@ var passport = require("../config/passport");
 
 var axios = require('axios');
 
-
 module.exports = function (app) {
   // Using the passport.authenticate middleware with our local strategy.
   // If the user has valid login credentials, send them to the members page.
@@ -14,8 +13,9 @@ module.exports = function (app) {
   });
 
   // Route for signing up a user. The user's password is automatically hashed and stored securely thanks to
-  // how we configured our Sequelize User Model. If the user is created successfully, proceed to log the user in,
-  // otherwise send back an error
+  // How we configured our Sequelize User Model. If the user is created successfully, proceed to log the user in,
+  // Otherwise send back an error
+
   app.post("/api/signup", function (req, res) {
     db.User.create({
       email: req.body.email,
@@ -39,6 +39,7 @@ module.exports = function (app) {
   app.get("/api/user_data", function (req, res) {
     if (!req.user) {
       // The user is not logged in, send back an empty object
+      // You have to send something back, would break your page
       res.json({});
     } else {
       // Otherwise send back the user's email and id
@@ -47,6 +48,7 @@ module.exports = function (app) {
         email: req.user.email,
         id: req.user.id,
       });
+
     }
   });
 
