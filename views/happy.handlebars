@@ -2,24 +2,48 @@
     <div class="row">
       <div class="col-12 hero-div">
         <h1 class="page-title pt-4 center-content">Lets Start Feeling Better</h1>
+        <h6 class="page-sub-title center-content"></h6>
           <div class="col-xl-10 offset-xl-1 col-lg-10 offset-lg-1  col-md-12 offset-md-0 col-sm-12 offset-sm-0">
               <div class="row ">
                 <div class="col-12">
                   <div class="row mb-3">
                     <div class="col-12">
-                       <h4 class="mood-sub"><i class="fas fa-photo-video pe-2"></i> GIFs We Think You'd Like</h4>
-                       <h5 class="mb-0">
+                       <h4 class="mood-sub">
+                           <i class="fas fa-photo-video pe-2"></i> GIFs We Think You'd Like
+                           <div class="spinner-border text-light" role="status" style="margin-bottom:-4px;">
+                                <span class="visually-hidden" >Loading...</span>
+                            </div>
+                        </h4>
+                       <h5 class="mood-holder mb-0">                          
                         <span class="pe-2">Tags:</span>
                         <span class="badge bg-light text-dark me-1 mood-tag" id="happy"><i class="fas fa-smile-beam pe-1"></i> Happy</span>
                         <span class="badge bg-light text-dark me-1 mood-tag" id="Motivational"><i class="fas fa-burn pe-1"></i> Motivational</span>
-                        <span class="badge bg-light text-dark me-2 mood-tag" id="Inspiration"><i class="fas fa-lightbulb pe-1"></i>Inspiration</span>
-                        <div class="spinner-border text-light" role="status" style="margin-bottom:-4px;">
-                          <span class="visually-hidden" >Loading...</span>
-                        </div>
-
+                        <span class="badge bg-light text-dark me-1 mood-tag" id="Inspiration"><i class="fas fa-lightbulb pe-1"></i>Inspiration</span>
+                        <span class="badge bg-light text-dark me-2" id="custom" data-bs-toggle="modal" data-bs-target="#customModal"><i class="fas fa-plus pe-1"></i>Add A Tag</span>                      
                        </h5>
                     </div>
                   </div>
+
+                  <!-- Modal -->
+                    <div class="modal fade" id="customModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Add A Tag!</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <label for="exampleFormControlInput1" class="form-label">New Tag</label>
+                                <input type="text" class="form-control" id="custom-tag-input" placeholder="Something Happy!">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-success add-custom">Add Tag</button>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+
                   <div class="row gif-row justify-content-md g-0">
                       <div class="col">
                         <img src="" class="giphy0"/>
@@ -49,47 +73,73 @@
                   <div class="row mt-5 mb-3">
                     <div class="col-12">
                         <h4 class="mood-sub"><i class="fas fa-book pe-2"></i> Some Books That Maybe Relevant</h4>
-                        <h5 class="mb-0">
-                          <span class="pe-2">Tags:</span>
-                          <span class="badge bg-light text-dark me-1"><i class="fas fa-smile-beam pe-1"></i> Happy</span>
-                          <span class="badge bg-light text-dark me-1"><i class="fas fa-burn pe-1"></i> Motivational</span>
-                          <span class="badge bg-light text-dark"><i class="fas fa-lightbulb pe-1"></i>Inspiration</span>
-                        </h5>
                     </div>
                   </div>
-                  <div class="row book-row justify-content-md g-0">
-                      <div class="col">
-                        <p class="book-title-0"></p>
-                        <img src="" class="books0"/>
-                      </div>
-                      <div class="col">
-                        <p class="book-title-1"></p>
-                        <img src="" class="books1"/>
-                      </div>
-                      <div class="col">
-                        <p class="book-title-2"></p>
-                        <img src="" class="books2"/>
-                      </div>
-                      <div class="col"> 
-                        <p class="book-title-3"></p>
-                        <img src="" class="books3"/>
-                      </div>
-                       <div class="col"> 
-                        <p class="book-title-4"></p>
-                        <img src="" class="books4"/>
-                      </div>
-                      <div class="col"> 
-                        <p class="book-title-5"></p>
-                        <img src="" class="books5"/>
-                      </div>
-                      <div class="col"> 
-                        <p class="book-title-6"></p>
-                        <img src="" class="books6"/>
-                      </div>
-                      <div class="col"> 
-                        <p class="book-title-7"></p>
-                        <img src="" class="books7"/>
-                      </div>
+                   <div class="row ">
+                    <div class="col-6">
+                        <div class="row book-row justify-content-md ">
+                            <div class="col-6">
+                                <div class="card mb-3">
+                                    <div class="row g-0">
+                                        <div class="col-auto">
+                                            <img src="..." alt="..." src="" class="books0">
+                                        </div>
+                                        <div class="col">
+                                            <div class="card-body">
+                                                <h5 class="book-title-0"></h5>
+                                                <p class="card-text book-desc-0"></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card mb-3">
+                                    <div class="row g-0">
+                                        <div class="col-auto">
+                                            <img src="..." alt="..." src="" class="books1">
+                                        </div>
+                                        <div class="col">
+                                            <div class="card-body">
+                                                <h5 class="book-title-1"></h5>
+                                                <p class="card-text book-desc-1"></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card mb-3">
+                                    <div class="row g-0">
+                                        <div class="col-auto">
+                                            <img src="..." alt="..." src="" class="books2">
+                                        </div>
+                                        <div class="col">
+                                            <div class="card-body">
+                                                <h5 class="book-title-2"></h5>
+                                                <p class="card-text book-desc-2"></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card mb-3">
+                                    <div class="row g-0">
+                                        <div class="col-auto">
+                                            <img src="..." alt="..." src="" class="books3">
+                                        </div>
+                                        <div class="col">
+                                            <div class="card-body">
+                                                <h5 class="book-title-3"></h5>
+                                                <p class="card-text book-desc-3"></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>   
+                        </div>
+                    </div>                  
                   </div>
                 </div>
               </div>        
