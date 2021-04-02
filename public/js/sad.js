@@ -1,6 +1,6 @@
 $(document).ready(function () {
   var giphyURL =
-    "https://api.giphy.com/v1/gifs/search?api_key=RANHjz2L1Drs7AUTUKTyWRWnP2iuiQpy&limit=6&q=motivation";
+    "https://api.giphy.com/v1/gifs/search?api_key=RANHjz2L1Drs7AUTUKTyWRWnP2iuiQpy&limit=6&q=sad";
 
   $.get(giphyURL).then(function (data) {
     console.log(data);
@@ -43,7 +43,7 @@ $(document).ready(function () {
     });
   });
 
-  $.get("/api/happy").then(function (data) {
+  $.get("/api/sad").then(function (data) {
     bookCount = data.books.items.length;
     console.log(data.books);
 

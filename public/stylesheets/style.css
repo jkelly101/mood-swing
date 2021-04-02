@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@400;600&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
 
 @media all and (min-width: 1024px) {
   /* Navbar Styles */
@@ -226,11 +226,10 @@ body {
   min-height: 40px;
 }
 
-  .spinner-border
-  {
-    display:none;
-  }
-  
+.spinner-border {
+  display: none;
+}
+
 .book-row .col {
   display: flex;
   justify-content: center;
@@ -250,4 +249,8 @@ blockquote {
 
 blockquote footer {
   text-align: right;
+}
+
+.badge {
+  cursor: pointer;
 }
