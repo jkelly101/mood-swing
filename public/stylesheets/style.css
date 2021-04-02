@@ -134,6 +134,11 @@ form.login {
   font-family: "Lobster", cursive;
 }
 
+.logo-a {
+  text-decoration: none;
+  color: #04404b;
+}
+
 .form-hero {
   background-image: linear-gradient(#4ca1af, #c4e0e5);
 }
@@ -186,6 +191,12 @@ body {
   font-family: "Lobster", cursive;
   color: #04404b;
   text-align: center;
+  padding: 40px;
+}
+
+.page-sub-title {
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
 }
 
 .moods {
@@ -213,6 +224,11 @@ body {
   padding: 20px;
   background-color: #c4e0e5;
   border-radius: 10px;
+  /* -webkit-animation: fadein 2s;
+  -moz-animation: fadein 2s;
+   -ms-animation: fadein 2s;
+    -o-animation: fadein 2s;
+       animation: fadein 2s; */
 }
 
 .mood-sub {
@@ -226,14 +242,21 @@ body {
   min-height: 40px;
 }
 
-.spinner-border {
-  display: none;
-}
-
 .book-row .col {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.book-row .col-6 .card,
+.web-card {
+  min-height: 240px;
+}
+
+.book-row .col-6 .card img,
+.web-img-1,
+.web-img-2 {
+  height: 240px;
 }
 
 .spinner-border {
@@ -251,6 +274,144 @@ blockquote footer {
   text-align: right;
 }
 
-.badge {
+.card-text {
+  max-height: 100px;
+  overflow: auto;
+}
+
+.badge:hover {
+  background-color: #c4e0e5 !important;
   cursor: pointer;
+}
+
+.animate__animated.animate_2 {
+  -webkit-animation-duration: 1.2s;
+  animation-duration: 1.2s;
+  -webkit-animation-duration: 1.2s;
+  animation-duration: 1.2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animate__animated.animate_3 {
+  -webkit-animation-duration: 1.3s;
+  animation-duration: 1.3s;
+  -webkit-animation-duration: 1.3s;
+  animation-duration: 1.3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animate__animated.animate_4 {
+  -webkit-animation-duration: 1.4s;
+  animation-duration: 1.4s;
+  -webkit-animation-duration: 1.4s;
+  animation-duration: 1.4s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animate__animated.animate_5 {
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animate__animated.animate_6 {
+  -webkit-animation-duration: 1.6s;
+  animation-duration: 1.6s;
+  -webkit-animation-duration: 1.6s;
+  animation-duration: 1.6s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animate__animated.animate_7 {
+  -webkit-animation-duration: 1.7s;
+  animation-duration: 1.7s;
+  -webkit-animation-duration: 1.7s;
+  animation-duration: 1.7s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animate__animated.animate_8 {
+  -webkit-animation-duration: 1.8s;
+  animation-duration: 1.8s;
+  -webkit-animation-duration: 1.8s;
+  animation-duration: 1.8s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animate__animated.animate_9 {
+  -webkit-animation-duration: 1.9s;
+  animation-duration: 1.9s;
+  -webkit-animation-duration: 1.9s;
+  animation-duration: 1.9s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animate__animated.animate_10 {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.web-img-1 {
+  background-image: url("/images/huffpost_logo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 6px;
+}
+
+.web-img-2 {
+  background-image: url("/images/ap_logo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  border-radius: 6px;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
