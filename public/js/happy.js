@@ -56,6 +56,14 @@ $(document).ready(function () {
 
     $("body").delegate(".mood-tag", "click", function(){
        
+        $('.col').removeClass("animate__animated animate__backInLeft")
+
+
+        for(let i = 0; i < 8; i++ )
+        {
+            $('.col').removeClass("animate_" + i)
+        }
+
         theMood = $(this).attr("id")
         theNewUrl = "https://api.giphy.com/v1/gifs/search?api_key=RANHjz2L1Drs7AUTUKTyWRWnP2iuiQpy&limit=12&q=" + theMood;
 
@@ -90,9 +98,7 @@ $(document).ready(function () {
                 if (counter == 8 ) { break; }
             }
 
-
-            $('.spinner-border').hide()
-    
+            $('.spinner-border').hide() 
         
         });
     }) 

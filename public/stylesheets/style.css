@@ -134,6 +134,13 @@ form.login {
   font-family: "Lobster", cursive;
 }
 
+
+.logo-a
+{
+  text-decoration:none;
+  color:#04404b;
+}
+
 .form-hero {
   background-image: linear-gradient(#4ca1af, #c4e0e5);
 }
@@ -248,12 +255,12 @@ body {
   align-items: center;
 }
 
-.book-row .col-6 .card
+.book-row .col-6 .card, .web-card
 {
   min-height:240px;
 }
 
-.book-row .col-6 .card img
+.book-row .col-6 .card img, .web-img-1, .web-img-2
 {
   height:240px;
 }
@@ -368,7 +375,23 @@ blockquote footer {
 }
 
 
+.web-img-1
+{
+  background-image: url("/images/huffpost_logo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius:6px;
+}
 
+.web-img-2
+{
+  background-image: url("/images/ap_logo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  border-radius:6px;
+
+}
 
 @keyframes fadein {
   from { opacity: 0; }
