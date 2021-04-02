@@ -82,6 +82,22 @@ module.exports = function (app) {
 
   });
 
+  app.get("/api/romantic", function(req, res) {
+   
+    //&key=AIzaSyDBrH_3o-Id-pJFZnDqva4mytUP5e6IsHs
+    axios.get('https://www.googleapis.com/books/v1/volumes?q=romance')
+    
+    .then(response => {
+      res.json({
+        books: response.data
+      });
+    })
+    .catch(error => {
+      console.log(error);
+    });
+
+});
+
      
 
 

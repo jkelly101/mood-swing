@@ -1,0 +1,32 @@
+.navbar {
+  background-color: #bb377d;
+}
+
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #fbd3e9;
+}
+
+.romance-div {
+  background-image: linear-gradient(#bb377d, #fbd3e9);
+}
+
+.romantic-title {
+  font-family: "Lobster", cursive;
+  color: #681c45;
+  text-align: center;
+}
+
+.gif-row,
+.book-row {
+  padding: 20px;
+  background-color: #fbd3e9;
+  border-radius: 10px;
+}
+
+.mood-sub {
+  border-left: 6px solid #681c45;
+  padding-left: 8px;
+  border-radius: 6px;
+}
