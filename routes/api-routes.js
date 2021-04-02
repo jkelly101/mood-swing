@@ -56,7 +56,6 @@ module.exports = function (app) {
     try {
       const resp = await axios.get("https://zenquotes.io/api/today");
       res.json(resp.data);
-      console.log(resp);
     } catch (err) {
       console.log(err);
     }
@@ -79,7 +78,6 @@ module.exports = function (app) {
       .catch(error => {
         console.log(error);
       });
-
   });
 
   app.get("/api/romantic", function(req, res) {
