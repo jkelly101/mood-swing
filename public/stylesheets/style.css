@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@400;600&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
 
 @media all and (min-width: 1024px) {
   /* Navbar Styles */
@@ -134,11 +134,9 @@ form.login {
   font-family: "Lobster", cursive;
 }
 
-
-.logo-a
-{
-  text-decoration:none;
-  color:#04404b;
+.logo-a {
+  text-decoration: none;
+  color: #04404b;
 }
 
 .form-hero {
@@ -193,15 +191,12 @@ body {
   font-family: "Lobster", cursive;
   color: #04404b;
   text-align: center;
-  padding:40px;
- 
+  padding: 40px;
 }
 
-.page-sub-title
-{
+.page-sub-title {
   font-family: "Montserrat", sans-serif;
   color: #fff;
-  
 }
 
 .moods {
@@ -234,7 +229,6 @@ body {
    -ms-animation: fadein 2s;
     -o-animation: fadein 2s;
        animation: fadein 2s; */
-  
 }
 
 .mood-sub {
@@ -248,21 +242,22 @@ body {
   min-height: 40px;
 }
 
-  
 .book-row .col {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.book-row .col-6 .card, .web-card
-{
-  min-height:240px;
+.book-row .col-6 .card,
+.web-card {
+  min-height: 240px;
 }
 
-.book-row .col-6 .card img, .web-img-1, .web-img-2
-{
-  height:240px;
+.book-row .col-6 .card img,
+.web-img-1,
+.web-img-2,
+.web-img-3 {
+  height: 240px;
 }
 
 .spinner-border {
@@ -280,18 +275,15 @@ blockquote footer {
   text-align: right;
 }
 
-.card-text
-{
-  max-height:100px;
-  overflow:auto;
+.card-text {
+  max-height: 100px;
+  overflow: auto;
 }
 
-.badge:hover
-{
-  background-color:#c4e0e5!important;
-  cursor:pointer;
+.badge:hover {
+  background-color: #c4e0e5 !important;
+  cursor: pointer;
 }
-
 
 .animate__animated.animate_2 {
   -webkit-animation-duration: 1.2s;
@@ -374,41 +366,60 @@ blockquote footer {
   animation-fill-mode: both;
 }
 
-
-.web-img-1
-{
+.web-img-1 {
   background-image: url("/images/huffpost_logo.png");
   background-repeat: no-repeat;
   background-size: contain;
-  border-radius:6px;
+  border-radius: 6px;
 }
 
-.web-img-2
-{
+.web-img-2 {
   background-image: url("/images/ap_logo.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  border-radius:6px;
+  border-radius: 6px;
+}
 
+.web-img-3 {
+  background-image: url("/images/date-night.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 6px;
 }
 
 @keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @-moz-keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @-webkit-keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @-ms-keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
