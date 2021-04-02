@@ -61,6 +61,24 @@ $(document).ready(function () {
     });
     $.get("/api/movies/angry").then (function(data) {
         console.log(data.movies.results);
+        let movieArray = data.movies.results;
+        let movieDiv = $("#movie-div");
+        
+        for(let i = 0; i < 4; i ++) {
+            console.log(movieArray[i])
+            let title = movieArray[i].title; 
+            let poster =`http://image.tmdb.org/t/p/w185/${movieArray[i].poster_path}`;
+            let overview = movieArray[i].overview;
+            let currentMovie = `<div class="card bg-danger"style="width: 10%"> 
+            <img src=${poster} class="card-img-top" alt="movie poster"/>
+            <div class="card-body">
+                <h5 class="card-title">${title}</h5>
+                <p class="card-text">${overview}</p>
+            </div>
+          </div>`
+          movieDiv.append(currentMovie);
+         
+        }
     })
 
   });
