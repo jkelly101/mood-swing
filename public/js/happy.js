@@ -1,5 +1,3 @@
-
-
 $(document).ready(function () {
       
     var giphyURL ="https://api.giphy.com/v1/gifs/search?api_key=RANHjz2L1Drs7AUTUKTyWRWnP2iuiQpy&limit=12&q=motivation";
@@ -25,7 +23,9 @@ $(document).ready(function () {
             if (counter == 8 ) { break; }
         }
 
-    });
+      if (imageWidth > 450) {
+        continue;
+      }
 
     $('.add-custom').click(function() {
         
@@ -103,13 +103,9 @@ $(document).ready(function () {
         });
     }) 
 
-    $.get("/api/happy").then(function (data) {
-        bookCount = data.books.items.length
-        console.log(data.books)
-        
-        for(var i = 0; i < 8;i++ )
-        {
-            
+      for (let i = 0; i < 6; i++) {
+        let imageURL = data.data[counter].images.fixed_height.url;
+        let imageWidth = data.data[counter].images.fixed_height.width;
 
             let title = data.books.items[i].volumeInfo.title;
             let imageURL = data.books.items[i].volumeInfo.imageLinks.thumbnail;
@@ -120,9 +116,25 @@ $(document).ready(function () {
             $(".book-desc-" + i).text(desc);
         }
 
+        $(".giphy" + counter).attr("src", imageURL);
+        counter = counter + 1;
+      }
+
+      $(".spinner-border").hide();
     });
     $.get("/api/movies/happy").then (function(data) {
         console.log(data);
     })
 
+
+  $.get("/api/happy").then(function (data) {
+    bookCount = data.books.items.length;
+    console.log(data.books);
+
+    for (var i = 0; i < 8; i++) {
+      let title = data.books.items[i].volumeInfo.title;
+      let imageURL = data.books.items[i].volumeInfo.imageLinks.thumbnail;
+      $(".books" + i).attr("src", imageURL);
+      // $(".book-title-" + i).text(title);
+    }
   });

@@ -55,9 +55,15 @@ module.exports = function (app) {
     } else {
       res.render("angry");   
     }
-    
-
   });
 }
+  app.get("/sad", isAuthenticated, function (req, res) {
+    if (!req.user) {
+      // The user is not logged in, send back an empty object
+      res.json({});
+    } else {
+      res.render("sad");
+    }
+  });
+};
 
- 
