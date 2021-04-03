@@ -389,6 +389,13 @@ blockquote footer {
   border-radius: 6px;
 }
 
+.web-img-4 {
+  background-image: url("/images/gunderson.JPG");
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 6px;
+}
+
 @keyframes fadein {
   from {
     opacity: 0;

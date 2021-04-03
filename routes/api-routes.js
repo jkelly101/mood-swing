@@ -95,7 +95,7 @@ module.exports = function (app) {
   app.get("/api/sad", function (req, res) {
     //&key=AIzaSyDBrH_3o-Id-pJFZnDqva4mytUP5e6IsHs
     axios
-      .get("https://www.googleapis.com/books/v1/volumes?q=sad")
+      .get("https://www.googleapis.com/books/v1/volumes?q=unhappy")
       .then((response) => {
         res.json({
           books: response.data,

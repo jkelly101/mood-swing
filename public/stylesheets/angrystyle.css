@@ -1,36 +1,32 @@
-
 body {
-    font-family: "Montserrat", sans-serif;
-    background-color: #ea384d;
-  }
+  font-family: "Montserrat", sans-serif;
+  background-color: #ea384d;
+}
 
+.navbar {
+  background-color: #d31027;
+}
 
- .navbar {
-     background-color: #d31027; 
-    }
-  
- div.row {
-    background-image: linear-gradient(#EA384D, #D31027);
-  }
+div.row {
+  background-image: linear-gradient(#ea384d, #d31027);
+}
 
-  .page-title {
-    font-family: "Lobster", cursive;
-    color: #04404b; 
-    text-align: center;
-    padding: 40px;
-  }
-  
-  .gif-row,
-  .book-row {
-    padding: 20px;
-    background-color: red;
-    border-radius: 10px;
-  }
-  .mood-sub {
-    border-left: 6px solid #681C45;
-    padding-left: 8px;
-    border-radius: 6px;
-    font-family: "Lobster", cursive;
-  }
-  
- 
+.page-title {
+  font-family: "Lobster", cursive;
+  color: #04404b;
+  text-align: center;
+  padding: 40px;
+}
+
+.gif-row,
+.book-row {
+  padding: 20px;
+  background-color: red;
+  border-radius: 10px;
+}
+.mood-sub {
+  border-left: 6px solid #681c45;
+  padding-left: 8px;
+  border-radius: 6px;
+  font-family: "Lobster", cursive;
+}
