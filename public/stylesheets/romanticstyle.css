@@ -8,7 +8,6 @@
   }
 }
 
-
 .navbar {
   background-color: #bb377d;
 }
@@ -35,7 +34,8 @@ body {
 }
 
 .gif-row,
-.book-row {
+.book-row,
+#movie-div {
   padding: 20px;
   background-color: #fbd3e9;
   border-radius: 10px;
