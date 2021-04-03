@@ -1,7 +1,22 @@
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+  .romantic-title {
+    font-family: "Lobster", cursive;
+    color: #681c45;
+    text-align: center;
+    padding: 8vw 2vw 2vw 2vw;
+    font-size: 8vw;
+  }
+}
+
+
 .navbar {
   background-color: #bb377d;
 }
 
+.logo-a {
+  text-decoration: none;
+  color: #681c45;
+}
 
 body {
   font-family: "Montserrat", sans-serif;
