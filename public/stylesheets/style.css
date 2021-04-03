@@ -46,7 +46,8 @@
     min-height: 60vw;
   }
 
-  .page-title {
+  .page-title,
+  .romantic-title {
     padding: 8vw 2vw 2vw 2vw;
     font-size: 4vw;
   }
