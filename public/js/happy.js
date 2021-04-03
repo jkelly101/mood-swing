@@ -121,5 +121,8 @@ $(document).ready(function () {
         }
 
     });
+    $.get("/api/movies/happy").then (function(data) {
+        console.log(data);
+    })
 
   });
