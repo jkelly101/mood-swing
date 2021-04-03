@@ -48,6 +48,15 @@ module.exports = function (app) {
     }
   });
 
+  app.get("/angry", isAuthenticated, function(req, res) {
+    if (!req.user) {
+      // The user is not logged in, send back an empty object
+      res.json({});
+    } else {
+      res.render("angry");   
+    }
+  });
+}
   app.get("/sad", isAuthenticated, function (req, res) {
     if (!req.user) {
       // The user is not logged in, send back an empty object
@@ -57,3 +66,4 @@ module.exports = function (app) {
     }
   });
 };
+

@@ -255,7 +255,9 @@ body {
 
 .book-row .col-6 .card img,
 .web-img-1,
-.web-img-2 {
+
+.web-img-2,
+.web-img-3 {
   height: 240px;
 }
 
@@ -377,6 +379,13 @@ blockquote footer {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+  border-radius: 6px;
+
+
+.web-img-3 {
+  background-image: url("/images/date-night.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
   border-radius: 6px;
 }
 
