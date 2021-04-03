@@ -122,6 +122,10 @@ $(document).ready(function () {
 
       $(".spinner-border").hide();
     });
+    $.get("/api/movies/happy").then (function(data) {
+        console.log(data);
+    })
+
 
   $.get("/api/happy").then(function (data) {
     bookCount = data.books.items.length;

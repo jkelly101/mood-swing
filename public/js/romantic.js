@@ -1,6 +1,6 @@
 $(document).ready(function () {
   var giphyURL =
-    "https://api.giphy.com/v1/gifs/search?api_key=RANHjz2L1Drs7AUTUKTyWRWnP2iuiQpy&limit=12&q=sad";
+    "https://api.giphy.com/v1/gifs/search?api_key=RANHjz2L1Drs7AUTUKTyWRWnP2iuiQpy&limit=12&q=love";
 
   $.get(giphyURL).then(function (data) {
     let counter = 0;
@@ -100,7 +100,7 @@ $(document).ready(function () {
     });
   });
 
-  $.get("/api/sad").then(function (data) {
+  $.get("/api/romantic").then(function (data) {
     bookCount = data.books.items.length;
     console.log(data.books);
 
