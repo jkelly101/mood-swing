@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@400;600&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
 
 @media all and (min-width: 1024px) {
   /* Navbar Styles */
@@ -46,7 +46,8 @@
     min-height: 60vw;
   }
 
-  .page-title {
+  .page-title,
+  .romantic-title {
     padding: 8vw 2vw 2vw 2vw;
     font-size: 4vw;
   }
@@ -140,7 +141,6 @@ form.login {
   font-family: "Lobster", cursive;
 }
 
-
 .logo-a, .navbar-text
 {
   text-decoration:none;
@@ -214,11 +214,9 @@ body {
   padding:40px;
 }
 
-.page-sub-title
-{
+.page-sub-title {
   font-family: "Montserrat", sans-serif;
   color: #fff;
-  
 }
 
 .moods {
@@ -269,21 +267,22 @@ body {
   min-height: 40px;
 }
 
-  
 .book-row .col {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.book-row .col-6 .card, .web-card
-{
-  min-height:240px;
+.book-row .col-6 .card,
+.web-card {
+  min-height: 240px;
 }
 
-.book-row .col-6 .card img, .web-img-1, .web-img-2
-{
-  height:240px;
+.book-row .col-6 .card img,
+.web-img-1,
+.web-img-2,
+.web-img-3 {
+  height: 240px;
 }
 
 .spinner-border {
@@ -301,18 +300,15 @@ blockquote footer {
   text-align: right;
 }
 
-.card-text
-{
-  max-height:100px;
-  overflow:auto;
+.card-text {
+  max-height: 100px;
+  overflow: auto;
 }
 
-.badge:hover
-{
-  background-color:#c4e0e5!important;
-  cursor:pointer;
+.badge:hover {
+  background-color: #c4e0e5 !important;
+  cursor: pointer;
 }
-
 
 .animate__animated.animate_2 {
   -webkit-animation-duration: 1.2s;
@@ -395,41 +391,68 @@ blockquote footer {
   animation-fill-mode: both;
 }
 
-
-.web-img-1
-{
+.web-img-1 {
   background-image: url("/images/huffpost_logo.png");
   background-repeat: no-repeat;
   background-size: contain;
-  border-radius:6px;
+  border-radius: 6px;
 }
 
-.web-img-2
-{
+.web-img-2 {
   background-image: url("/images/ap_logo.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  border-radius:6px;
+  border-radius: 6px;
+}
 
+.web-img-3 {
+  background-image: url("/images/date-night.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 6px;
+}
+
+.web-img-4 {
+  background-image: url("/images/gunderson.JPG");
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 6px;
+  min-height: 240px;
 }
 
 @keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @-moz-keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @-webkit-keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @-ms-keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

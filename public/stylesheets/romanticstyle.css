@@ -1,0 +1,48 @@
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+  .romantic-title {
+    font-family: "Lobster", cursive;
+    color: #681c45;
+    text-align: center;
+    padding: 8vw 2vw 2vw 2vw;
+    font-size: 8vw;
+  }
+}
+
+.navbar {
+  background-color: #bb377d;
+}
+
+.logo-a {
+  text-decoration: none;
+  color: #681c45;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #fbd3e9;
+}
+
+.romance-div {
+  background-image: linear-gradient(#bb377d, #fbd3e9);
+}
+
+.romantic-title {
+  font-family: "Lobster", cursive;
+  color: #681c45;
+  text-align: center;
+  padding: 40px;
+}
+
+.gif-row,
+.book-row,
+#movie-div {
+  padding: 20px;
+  background-color: #fbd3e9;
+  border-radius: 10px;
+}
+
+.mood-sub {
+  border-left: 6px solid #681c45;
+  padding-left: 8px;
+  border-radius: 6px;
+}
