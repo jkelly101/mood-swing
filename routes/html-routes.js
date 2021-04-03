@@ -48,8 +48,14 @@ module.exports = function(app) {
     } else {
       res.render("happy");   
     }
-    
-
   });
 
+  app.get("/crazy", isAuthenticated, function(req, res) {
+    if (!req.user) {
+      // The user is not logged in, send back an empty object
+      res.json({});
+    } else {
+      res.render("crazy");   
+    }
+  });
 };

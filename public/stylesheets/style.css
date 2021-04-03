@@ -51,6 +51,12 @@
     font-size: 4vw;
   }
 
+  .page-title-crazy
+  {
+    padding: 8vw 2vw 2vw 2vw;
+    font-size: 4vw;
+  }
+
   .moods {
     font-size: 3vw;
     padding: 1vw;
@@ -135,7 +141,7 @@ form.login {
 }
 
 
-.logo-a
+.logo-a, .navbar-text
 {
   text-decoration:none;
   color:#04404b;
@@ -189,12 +195,23 @@ body {
   background-image: linear-gradient(#4ca1af, #c4e0e5);
 }
 
+.hero-div-crazy {
+  background-image: linear-gradient(#FC5C7D, #6A82FB);
+}
+
 .page-title {
   font-family: "Lobster", cursive;
   color: #04404b;
   text-align: center;
   padding:40px;
- 
+}
+
+.page-title-crazy
+{
+  font-family: "Lobster", cursive;
+  color: #fff;
+  text-align: center;
+  padding:40px;
 }
 
 .page-sub-title
@@ -229,13 +246,17 @@ body {
   padding: 20px;
   background-color: #c4e0e5;
   border-radius: 10px;
-  /* -webkit-animation: fadein 2s;
-  -moz-animation: fadein 2s;
-   -ms-animation: fadein 2s;
-    -o-animation: fadein 2s;
-       animation: fadein 2s; */
-  
 }
+
+.gif-row-crazy{
+  padding: 20px;
+  background-color: #FFBECC;
+  border-radius: 10px;
+}
+
+
+
+
 
 .mood-sub {
   border-left: 6px solid #04404b;
