@@ -69,7 +69,7 @@ $(document).ready(function () {
             let title = movieArray[i].title; 
             let poster =`http://image.tmdb.org/t/p/w185/${movieArray[i].poster_path}`;
             let overview = movieArray[i].overview;
-            let currentMovie = `<div class="card bg-danger"style="width: 10%"> 
+            let currentMovie = `<div class="card bg-danger"style="width: 14%"> 
             <img src=${poster} class="card-img-top" alt="movie poster"/>
             <div class="card-body">
                 <h5 class="card-title">${title}</h5>
