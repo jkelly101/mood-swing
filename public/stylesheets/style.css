@@ -394,6 +394,7 @@ blockquote footer {
   background-repeat: no-repeat;
   background-size: contain;
   border-radius: 6px;
+  min-height: 240px;
 }
 
 @keyframes fadein {
