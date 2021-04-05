@@ -421,6 +421,14 @@ blockquote footer {
   min-height: 240px;
 }
 
+.web-img-5 {
+  background-image: url("/images/advice.JPG");
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 6px;
+  min-height: 240px;
+}
+
 @keyframes fadein {
   from {
     opacity: 0;

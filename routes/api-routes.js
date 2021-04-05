@@ -133,7 +133,7 @@ module.exports = function (app) {
 
     axios
       .get(
-        `https://api.themoviedb.org/3/discover/movie?api_key=0617e1b9a854c456b3318ee55d178c39&language=en-US&with_genres=${genre}`
+        `https://api.themoviedb.org/3/discover/movie?api_key=${process.env.MOVIE_APIKEY}&language=en-US&with_genres=${genre}`
       )
 
       // in the consoloe try to log array only
@@ -148,6 +148,20 @@ module.exports = function (app) {
         res.json({
           movies: response.data,
         });
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  });
+  app.get("/api/giphy/:mood", function (req, res) {
+    let currentMood = req.params.mood;
+    axios
+      .get(
+        `https://api.giphy.com/v1/gifs/search?api_key=${process.env.GIPHY_APIKEY}&limit=12&q=${currentMood}`
+      )
+      .then((response) => {
+        console.log(response.data);
+        res.json(response.data);
       })
       .catch((error) => {
         console.log(error);
