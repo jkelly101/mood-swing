@@ -1,7 +1,7 @@
 $(document).ready(function () {
   // var giphyURL =
   // "https://api.giphy.com/v1/gifs/search?api_key=RANHjz2L1Drs7AUTUKTyWRWnP2iuiQpy&limit=12&q=unhappy";
-  $.get(`/api/giphy/sad`).then(function (data) {
+  $.get(`/api/giphy/unhappy`).then(function (data) {
     let counter = 0;
     console.log(data);
     let containerWidth = $(".gif-row").width();
